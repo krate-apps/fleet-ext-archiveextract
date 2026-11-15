@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "extensionId": "org.fleet.archiveextract",
+  "pages": [
+    {
+      "id": "archiveextract",
+      "title": "Archive Extract",
+      "route": "/ext/org.fleet.archiveextract/archiveextract"
+    }
+  ],
+  "actions": [
+    {
+      "id": "run-unpack",
+      "label": "Archive Extract archive",
+      "target": "global"
+    }
+  ],
+  "panels": [
+    {
+      "id": "unpack-settings",
+      "title": "Archive Extract",
+      "placement": "settings"
+    }
+  ],
+  "forms": [
+    {
+      "id": "unpack-run",
+      "title": "Extract .zip / .rar",
+      "fields": [
+        {
+          "name": "archive",
+          "label": "Archive path (under download roots)",
+          "kind": "text",
+          "required": true
+        },
+        {
+          "name": "dest",
+          "label": "Destination directory (optional)",
+          "kind": "text"
+        }
+      ],
+      "description": "Adjust Extract .zip / .rar — essentials first, extras under More options."
+    }
+  ]
+}
